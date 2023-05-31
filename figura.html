@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*===============
+      Cuadrado 
+     ============*/
+function calcularAreaCuadrado(lado) {
+  return lado * lado;
+}
+
+function calcularPerimetroCuadrado(lado) {
+  return lado * 4;
+}
+
+var ladoCuadrado = parseFloat(prompt("Ingresa la medida del lado del cuadrado:"));
+var areaCuadrado = calcularAreaCuadrado(ladoCuadrado);
+var perimetroCuadrado = calcularPerimetroCuadrado(ladoCuadrado);
+
+document.write("El área del cuadrado es: " + areaCuadrado);
+document.write("El perímetro del cuadrado es: " + perimetroCuadrado+ "<br>");
+      /*===============
+      Triangulo  
+        ============*/
+      function calcularAreaTriangulo(base, altura) {
+  return (base * altura) / 2;
+}
+
+function calcularPerimetroTriangulo(lado1, lado2, lado3) {
+  return lado1 + lado2 + lado3;
+}
+
+var baseTriangulo = parseFloat(prompt("Ingresa la medida de la base del triángulo:"));
+var alturaTriangulo = parseFloat(prompt("Ingresa la medida de la altura del triángulo:"));
+var lado1Triangulo = parseFloat(prompt("Ingresa la medida del lado 1 del triángulo:"));
+var lado2Triangulo = parseFloat(prompt("Ingresa la medida del lado 2 del triángulo:"));
+var lado3Triangulo = parseFloat(prompt("Ingresa la medida del lado 3 del triángulo:"));
+
+var areaTriangulo = calcularAreaTriangulo(baseTriangulo, alturaTriangulo);
+var perimetroTriangulo = calcularPerimetroTriangulo(lado1Triangulo, lado2Triangulo, lado3Triangulo + "<br>");
+
+document.write("El área del triángulo es: " + areaTriangulo);
+document.write("El perímetro del triángulo es: " + perimetroTriangulo);  
+    /*===============
+      Circulo 
+    ============*/
+function calcularAreaCirculo(radio) {
+  return Math.PI * radio * radio;
+}
+
+function calcularCircunferenciaCirculo(radio) {
+  return 2 * Math.PI * radio;
+}
+
+var radioCirculo = parseFloat(prompt("Ingresa la medida del radio del círculo:"));
+
+var areaCirculo = calcularAreaCirculo(radioCirculo);
+var circunferenciaCirculo = calcularCircunferenciaCirculo(radioCirculo);
+
+document.write("El área del círculo es: " + areaCirculo+ "<br>");
+document.write("La circunferencia del círculo es: " + circunferenciaCirculo);
+   
+   </script>
+</body>
+</html>
